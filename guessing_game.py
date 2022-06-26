@@ -1,47 +1,33 @@
 import math
 import random
-a = []
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
+random_nambers = []
+for i in range(10): 
+    random_nambers.append(random.randint(1, 99))
+
 for i in range(10):
     g = int(input("Enter an integer from 1 to 99: "))
-    while a[i] != g:
-        if g < a[i]:
+    while random_nambers[i] != g:
+        if g < random_nambers[i]:
             print("guess is low")
             g = int(input("Enter an integer from 1 to 99: "))
-        elif g > a[i]:
+        elif g > random_nambers[i]:
             print("guess is high")
             g = int(input("Enter an integer from 1 to 99: "))
         else:
             break
     print("you guessed it!")
 
-b = []
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
+random_nambersb = []
+for i in range(10): 
+    random_nambersb.append(random.randint(1, 99))
+
 for i in range(10):
     g = int(input("Enter an integer from 1 to 49: "))
-    while b[i] != g:
-        if g < b[i]:
+    while random_nambersb[i] != g:
+        if g < random_nambersb[i]:
             print("guess is low")
             g = int(input("Enter an integer from 1 to 49: "))
-        elif g > b[i]:
+        elif g > random_nambersb[i]:
             print("guess is high")
             g = int(input("Enter an integer from 1 to 49: "))
         else:
